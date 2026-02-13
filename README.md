@@ -5,10 +5,12 @@ This repository contains word list data for the [WordMaster](https://github.com/
 ## Overview
 
 - **40,000+ vocabulary words** across English and Japanese
+- **4,200+ kanji characters** with readings and example words
 - **Chinese translations** for all entries
 - **IPA phonetics** for English words
 - **Example sentences** with translations
 - **Multiple proficiency levels** (CEFR A1-C2, JLPT N5-N1)
+- **Japanese school curriculum** kanji (Grades 1-6, Middle School, High School)
 
 ## Structure
 
@@ -26,12 +28,25 @@ english/              # English word lists
   kaoyan_full.json    # 考研 Full vocabulary
   ...
 
-japanese/             # Japanese word lists (JLPT)
-  jlpt_n5.json        # JLPT N5 - Beginner
-  jlpt_n4.json        # JLPT N4 - Elementary
-  jlpt_n3.json        # JLPT N3 - Intermediate
-  jlpt_n2.json        # JLPT N2 - Upper-Intermediate
-  jlpt_n1.json        # JLPT N1 - Advanced
+japanese/             # Japanese word lists
+  jlpt_n5.json        # JLPT N5 - Beginner vocabulary
+  jlpt_n4.json        # JLPT N4 - Elementary vocabulary
+  jlpt_n3.json        # JLPT N3 - Intermediate vocabulary
+  jlpt_n2.json        # JLPT N2 - Upper-Intermediate vocabulary
+  jlpt_n1.json        # JLPT N1 - Advanced vocabulary
+  jlpt_kanji_n5.json  # JLPT N5 - Kanji (80 characters)
+  jlpt_kanji_n4.json  # JLPT N4 - Kanji (170 characters)
+  jlpt_kanji_n3.json  # JLPT N3 - Kanji (370 characters)
+  jlpt_kanji_n2.json  # JLPT N2 - Kanji (380 characters)
+  jlpt_kanji_n1.json  # JLPT N1 - Kanji (1,135 characters)
+  school_kanji_grade1.json  # 小学1年生 (80 kanji)
+  school_kanji_grade2.json  # 小学2年生 (160 kanji)
+  school_kanji_grade3.json  # 小学3年生 (200 kanji)
+  school_kanji_grade4.json  # 小学4年生 (202 kanji)
+  school_kanji_grade5.json  # 小学5年生 (193 kanji)
+  school_kanji_grade6.json  # 小学6年生 (191 kanji)
+  school_kanji_middle.json  # 中学校 (610 kanji)
+  school_kanji_high.json    # 高等学校 (500 kanji)
 ```
 
 ## Word List Format
@@ -96,7 +111,7 @@ japanese/             # Japanese word lists (JLPT)
 | toefl-full.json | TOEFL 托福 | ~10,000 | Test of English as a Foreign Language |
 | sat_full.json | SAT | ~4,000 | SAT vocabulary |
 
-### Japanese (JLPT 日本語能力試験)
+### Japanese Vocabulary (JLPT 日本語能力試験)
 
 | File | Level | Words | Description |
 |------|-------|-------|-------------|
@@ -106,12 +121,40 @@ japanese/             # Japanese word lists (JLPT)
 | jlpt_n2.json | N2 | ~6,000 | Upper-Intermediate - Complex texts |
 | jlpt_n1.json | N1 | ~10,000 | Advanced - Near-native level |
 
+### Japanese Kanji - JLPT (日本語能力試験 漢字)
+
+| File | Level | Kanji | Description |
+|------|-------|-------|-------------|
+| jlpt_kanji_n5.json | N5 | 80 | Basic kanji for beginners |
+| jlpt_kanji_n4.json | N4 | 170 | Elementary kanji |
+| jlpt_kanji_n3.json | N3 | 370 | Intermediate kanji |
+| jlpt_kanji_n2.json | N2 | 380 | Upper-intermediate kanji |
+| jlpt_kanji_n1.json | N1 | 1,135 | Advanced kanji |
+| **Total** | | **2,135** | |
+
+### Japanese Kanji - School Curriculum (学年別漢字配当表)
+
+| File | Level | Kanji | Description |
+|------|-------|-------|-------------|
+| school_kanji_grade1.json | 小学1年 | 80 | Elementary Grade 1 |
+| school_kanji_grade2.json | 小学2年 | 160 | Elementary Grade 2 |
+| school_kanji_grade3.json | 小学3年 | 200 | Elementary Grade 3 |
+| school_kanji_grade4.json | 小学4年 | 202 | Elementary Grade 4 |
+| school_kanji_grade5.json | 小学5年 | 193 | Elementary Grade 5 |
+| school_kanji_grade6.json | 小学6年 | 191 | Elementary Grade 6 |
+| school_kanji_middle.json | 中学校 | 610 | Middle School |
+| school_kanji_high.json | 高等学校 | 500 | High School |
+| **Total** | | **2,136** | Complete Joyo Kanji |
+
 ## Data Sources
 
 - **CEFR (A1-B2)**: [CEFR-J Vocabulary Profile](https://github.com/openlanguageprofiles/olp-en-cefrj) - CC BY-SA 4.0
 - **CEFR (C1-C2)**: [Octanove Vocabulary Profile](https://github.com/openlanguageprofiles/olp-en-cefrj) - CC BY-SA 4.0
 - **Chinese Exams**: [KyleBing/english-vocabulary](https://github.com/KyleBing/english-vocabulary)
-- **JLPT**: Community-sourced JLPT vocabulary lists
+- **JLPT Vocabulary**: Community-sourced JLPT vocabulary lists
+- **JLPT Kanji**: [davidluzgouveia/kanji-data](https://github.com/davidluzgouveia/kanji-data)
+- **School Kanji (Elementary)**: [fnshr/kyo-kan](https://github.com/fnshr/kyo-kan) - CC0 1.0
+- **School Kanji (Joyo)**: [vaiorabbit/everyday_use_kanji](https://github.com/vaiorabbit/everyday_use_kanji)
 
 ## Usage
 
